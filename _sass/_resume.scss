@@ -1,0 +1,44 @@
+.resume {
+  .resume-avatar {
+    width:75%;
+    max-width:200px;
+  }
+
+  .resume-name {
+    font-size:45px;
+  }
+
+  .resume-drive-button {
+    color:white;
+    background-color:#4285f4;
+    margin-right:35px;
+    margin-top:20px;
+  }
+
+  .subtext {
+    font-style:italic;
+    margin-bottom:0;
+  }
+
+  .item {
+    margin-top:15px;
+
+    a {
+      color: black;
+    }
+
+    h3 {
+      margin-bottom: 0;
+    }
+
+    ul {
+      margin-bottom:0;
+    }
+
+    .item-description {
+      margin:0;
+    }
+  }
+}
+
+

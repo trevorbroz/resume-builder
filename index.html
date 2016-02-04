@@ -1,23 +1,97 @@
 ---
 layout: default
+title: Resume
+permalink: /
 ---
 
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
+<div class="resume">
+    <!-- Introduction -->
+    <div class="row">
+        <div class="col-sm-3 text-center">
+            <img src="/images/profile.png" class="img-circle resume-avatar"/>
+        </div>
+        <div class="col-sm-9">
+            <h2>Austin Green</h2>
+            <p>I am currently a Senior at Kansas State University.  I will be graduation in the Spring of 2016 with a
+                Bachelors of Engineering in Software Engineering with a minor in Business.  I enjoy finding unique
+                solutions to common problems with an emphasis on scalable web and mobile.</p>
+            <a href="mailto:austingreenkansas@gmail.com"><span class="text-muted">austingreenkansas@gmail.com</span></a> |
+            <a href="https://github.com/austin94" target="_blank"><span class="text-muted">https://github.com/austin94</span></a>
+            <div style="margin-top:15px;"></div>
+            <a href="https://docs.google.com/document/d/1RcsPKvl1aqt0D9PemD3djomCS1a_CcG8qDh3pkD3cDs/edit?usp=sharing" target="_blank">
+                <button class="btn resume-drive-button">
+                    <span aria-hidden="true" class="social_googledrive"></span> GOOGLE DOC RESUME
+                </button>
+            </a>
+        </div>
+    </div>
+    <!-- End Introduction -->
+    <!-- Education -->
+    <div class="row header">
+        <h2 class="header-name">EDUCATION</h2>
+        <hr class="header-bar"/>
+    </div>
+    {% for education in site.data.education %}
+    <div class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+            <div class="row item">
+                <div class="col-xs-7">
+                    <a href="{{ education.url }}" target="_blank">
+                        <h3 class="text-uppercase">{{ education.name }}</h3>
+                    </a>
+                </div>
+                <div class="col-xs-5 text-right">
+                    <a href="https://www.google.com/maps/place/{{ education.location }}" target="_blank">
+                        <h3 class="text-uppercase">{{ education.location }}</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-10 col-lg-offset-1">
+            <p class="subtext">{{ education.subText}}</p>
+            <ul>
+                {% for involvement in education.involvement %}
+                <li>{{ involvement.description }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
     {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+    <!-- End Education -->
+    <!-- Work Experience -->
+    <div class="row header">
+        <h2 class="header-name">WORK EXPERIENCE</h2>
+        <hr class="header-bar"/>
+    </div>
+    {% for work in site.data.workExperience %}
+    <div class="row item">
+        <div class="col-lg-10 col-lg-offset-1">
+            <div class="row">
+                <div class="col-xs-7">
+                    <a href="{{ work.url }}" target="_blank">
+                        <h3 class="text-uppercase">{{ work.name }}</h3>
+                    </a>
+                </div>
+                <div class="col-xs-5 text-right">
+                    <a href="https://www.google.com/maps/place/{{ work.location }}" target="_blank">
+                        <h3 class="text-uppercase">{{ work.location }}</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-10 col-lg-offset-1">
+            <p class="subtext">{{ work.subText }}</p>
+            <p class="item-description">{{ work.description }}</p>
+            <ul>
+                {% for involvement in work.involvement %}
+                <li>{{ involvement.description }}</li>
+                {% endfor %}
+            </ul>
+            <p>Technologies Used: {{ work.technologies }}</p>
+        </div>
+    </div>
+    {% endfor %}
+    <!-- End Work Experience -->
 </div>
+
+

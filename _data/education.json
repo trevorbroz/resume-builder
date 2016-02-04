@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Kansas State University",
+    "url": "http://www.k-state.edu",
+    "location": "Manhattan, KS",
+    "subText": "Senior with a 3.60 cumulative GPA. Graduating in Spring 2016.",
+    "involvement": [
+      {
+        "description": "Graduated with a degree in Computer Science - Software Engineering with a minor in Business."
+      },
+      {
+        "description": "Focus in scalable web and mobile technologies."
+      },
+      {
+        "description": "Vice-President, RLC Chairman, Homecoming, and Recruitment chairman of the Kansas State Chapter of the Delta Chi Fraternity."
+      },
+      {
+        "description": "1st place in the CIS Department and 2nd overall in Engineering for developing a web-based responsive recruitment display for the Spring 2014 Engineering Open House."
+      }
+    ]
+  }
+]
