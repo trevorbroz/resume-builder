@@ -13,13 +13,13 @@ To get started you can download the base template here: [https://github.com/aust
 To install Jekyll and it's dependencies you will need Ruby installed on your machine.  If you have a Windows machine
 there are several services to do this for you.
 
-{% highlight bash %}
+```
 # Install the Jekyll Ruby Gem
 gem install jekyll
 
 # Clone the base git repo
 git clone https://github.com/alskdfads.git
-{% endhighlight %}
+```
 
 For full installation instructions for Jekyll refer to their documentation 
 [http://jekyllrb.com/docs/installation](http://jekyllrb.com/docs/installation/)
@@ -31,9 +31,9 @@ help us organize data and then create static HTML files to host separately.
 Jekyll has a built-in utility that watches for file changes and re-compiles your assets automatically.  You can start this
 utility with:
 
-{% highlight bash %}
+```
 jekyll serve
-{% endhighlight %}
+```
 
 This makes your site visible at [localhost:4000](http://localhost:4000).  You static files can be found under the *_site* 
 directory.  This is what you will host later on.
@@ -48,7 +48,7 @@ The data that the resume uses is divided into three categories:
 These can be found in the JSON files under the *_data* directory.
 
 ### Education
-{% highlight json %}
+```
   {
     "name": "Kansas State University",
     "url": "http://www.k-state.edu",
@@ -66,7 +66,7 @@ These can be found in the JSON files under the *_data* directory.
       }
     ]
   }
-{% endhighlight %}
+```
 
 The JSON files determine what data is used to render the static resume page.  The *jekyll serve* command from earlier
 will recognize changes in your files and recompile the page.  Just refresh to view the changes.
@@ -78,7 +78,7 @@ information.
 ## Image Thumbnail, Name, and Description
 To change the name and description of the resume, update the **_config.yml** file.
 
-{% highlight yml %}
+```
   title: Austin Green
   email: austingreenkansas@gmail.com
   description: >
@@ -88,7 +88,7 @@ To change the name and description of the resume, update the **_config.yml** fil
   baseurl: ""
   url: http://austingreen.info
   github_username:  austin94
-{% endhighlight %}
+```
 
 To replace the image thumbnail with your own, overwrite the **profile.png** image in the *images* directory.
 
