@@ -1,0 +1,200 @@
+{
+  "introduction": {
+    "name": "Austin Green",
+    "description": "I am currently a Senior at Kansas State University. I will be graduation in the Spring of 2016 with a Bachelors of Engineering in Software Engineering with a minor in Business. I enjoy finding unique solutions to common problems with an emphasis on scalable web and mobile.",
+    "links": [
+      {
+        "text": "austingreenkansas@gmail.com",
+        "url": "mailto:austingreenkansas@gmail.com"
+      },
+      {
+        "text": "https://github.com/austin94",
+        "url": "https://github.com/austin94"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "name": "Education",
+      "experiences": [
+        {
+          "name": "Kansas State University",
+          "url": "http://www.k-state.edu",
+          "location": "Manhattan, KS",
+          "subText": "Senior with a 3.60 cumulative GPA. Graduating in Spring 2016.",
+          "description": "",
+          "involvement": [
+            {
+              "description": "Graduated with a degree in Computer Science - Software Engineering with a minor in Business."
+            },
+            {
+              "description": "Focus in scalable web and mobile technologies."
+            },
+            {
+              "description": "Vice-President, RLC Chairman, Homecoming, and Recruitment Chairman of the Kansas State Chapter of the Delta Chi Fraternity."
+            },
+            {
+              "description": "1st place in the CIS Department and 2nd overall in Engineering for developing a web-based responsive recruitment display for the Spring 2014 Engineering Open House."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Work Experience",
+      "experiences": [
+          {
+            "name": "Delphix",
+            "url": "http://www.delphix.com",
+            "location": "Menlo Park, CA",
+            "subText": "Software Engineer Front-End Development Team.  Starting August 2016.",
+            "description": "Design and implement front-end solutions for the Delphix DAAS platform.",
+            "involvement": [
+              {
+                "description": "Starting in August 2016."
+              }
+            ]
+          },
+          {
+            "name": "Garmin International",
+            "url": "http://www.garmin.com/en-US",
+            "location": "Olathe, KS",
+            "subText": "Web-based aviation and fitness applications. May 2015 - August 2015",
+            "description": "Created web-based, code analysis tools to streamline development and engineering efficiency",
+            "involvement": [
+              {
+                "description": "Developed AngularJS and D3.js based code analysis tools to visualize codebase and find deficiencies"
+              },
+              {
+                "description": "Create custom Jenkins addon to integrate the web-based visualization tool into their CI environment"
+              },
+              {
+                "description": "Developed ConnectIQ fitness wearable applications that leveraged the Google Distance Matrix, Places, and Directions API's along with node.js and socket.io to provide real-time directions."
+              }
+            ],
+            "technologies": "Javascript, TypeScript, AngularJS, D3.js, less, socket.io, node.js, mysql, monkey-c, boost-build, Jenkins CI, Java"
+          },
+          {
+            "name": "TAF Technologies LLC",
+            "url": "https://vaultunited.com/",
+            "location": "Kansas City, KS",
+            "subText": "Software Engineering Consultant. July 2015 - Present",
+            "description": "Design and implement iOS and web based technologies for bluetooth enabled track and field devices",
+            "involvement": [
+              {
+                "description": "Communicated with stakeholders to design and plan product release cycle."
+              },
+              {
+                "description": "Developed a native iOS application to communicate, control, and modify BLE enabled track and field sensors."
+              },
+              {
+                "description": "Developed scalable web application to allow cross-device access to athlete information and allow large-scale data analysis."
+              }
+            ],
+            "technologies": "Swift, Objective-C, JavaScript (node.js), AngularJS, PostgreSQL, AWS Technologies"
+          },
+          {
+            "name": "GTM Sportswear",
+            "url": "http://gtmsportswear.com/",
+            "location": "Manhattan, KS",
+            "subText": "Examine, extend, and create backend .net web applications. August 2014 - Present",
+            "description": "Automated accounting concepts and created internal and external tools for OEMs and customers",
+            "involvement": [
+              {
+                "description": "Created custom web-based solutions to increase department efficiency and decrease dependence on outside resources."
+              },
+              {
+                "description": "Work with office and production personnel to create tools that increase their efficiency and profits."
+              },
+              {
+                "description": "Developed and managed both front and back-end web applications for public and internal applications."
+              }
+            ],
+            "technologies": "VB.net, C#, t-sql, SQL Server Profiler, Infor Smart Office Inventory Management System"
+          },
+          {
+            "name": "Beyond the Scores",
+            "url": "https://www.beyondthescores.com/public/",
+            "location": "Kansas City, MO",
+            "subText": "Web Development and Software Design. March 2013 - August 2014",
+            "description": "Design and develop large-scale, real-time web applications.",
+            "involvement": [
+              {
+                "description": "Developed sports management software to help the management and creation of Gymnastics teams and leagues."
+              },
+              {
+                "description": "Created a pet weighing kiosk for PetStep (Petco) that collects user and animal data."
+              },
+              {
+                "description": "Work with clients and partners to create systems that solve their unique issues."
+              }
+            ],
+            "technologies": "HTML, CSS, PHP, Javascript, AngularJS, C#, asp.net MVC, node.js, t-sql, mongoDB, Redis, Nginx, Apache, Amazon ec2"
+          },
+          {
+            "name": "CIS Department Webmaster",
+            "url": "http://cis.ksu.edu/",
+            "location": "Manhattan, KS",
+            "subText": "Web Development and System Administration. December 2013 - August 2014",
+            "description": "Develop web applications, recruitment strategies, and maintain existing resources of the Computing and Information Sciences Department at Kansas State University.",
+            "involvement": [
+              {
+                "description": "Create web applications that help students manage their information with the University and inside the Department."
+              },
+              {
+                "description": "Work with office personnel and recruitment staff to develop new ways to interact with future students and increase enrollment."
+              },
+              {
+                "description": "Developed a web based inventory management system using node.js to decrease time spent during state audits."
+              },
+              {
+                "description": "Created iOS and Android applications using the Ionic framework to interface with the new inventory system."
+              }
+            ],
+            "technologies": "HTML, CSS, Javascript, AngularJS, PHP, Ionic, Ubuntu and Debian server environments, mySQL, CouchDB, Active Directory, PhoneGap"
+          },
+          {
+            "name": "Kansas State Research and Extension",
+            "url": "http://www.ksre.k-state.edu/",
+            "location": "Manhattan, KS",
+            "subText": "Technical Support and System Administration. August 2012 - December 2013",
+            "description": "Provided technical support and programming solutions for over 150 counties and offices.",
+            "involvement": [
+              {
+                "description": "Operated as a high-level support technician that provided IT support for the Kansas State Research and Extensions offices and University Printing."
+              },
+              {
+                "description": "Was able to reduce ticket completion time by 40% by creating and implementing new strategies for local and remote technicians to respond to issues."
+              },
+              {
+                "description": "Automated software deployment for new machines to decrease completion times from 2.5 hours to 30 minutes."
+              }
+            ],
+            "technologies": "Active Directory, Windows AIK, Python"
+          }
+        ]
+    },
+    {
+      "name": "Community Service",
+      "experiences": [
+        {
+          "name": "DBSAOP",
+          "url": "http://dbsaop.org/",
+          "location": "Overland Park, KS",
+          "subText": "Depression and Bipolar Support Alliance of Overland Park. Fall 2015.",
+          "involvement": [
+            {
+              "description": "Created <a href='http://dbsaop.org/'>http://dbsaop.org</a> for the organization"
+            },
+            {
+              "description": "Created a basic wordpress theme and provided training for staff to actively update their web experience"
+            },
+            {
+              "description": "Helped with general technology questions including mailing lists"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

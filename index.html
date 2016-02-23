@@ -11,116 +11,59 @@ permalink: /
             <img src="/images/profile.png" class="img-circle resume-avatar"/>
         </div>
         <div class="col-sm-9">
-            <h2>{{ site.data.introduction.name }}</h2>
-            <p>{{ site.data.introduction.description }}</p>
-
-            <a href="mailto:austingreenkansas@gmail.com"><span class="text-muted">austingreenkansas@gmail.com</span></a> |
-            <a href="https://github.com/austin94" target="_blank"><span class="text-muted">https://github.com/austin94</span></a>
+            <h2>{{ site.data.information.introduction.name }}</h2>
+            <p>{{ site.data.information.introduction.description }}</p>
+            {% for link in site.data.information.introduction.links %}
+              <a href="{{ link.url }}" target="_blank">
+                <span class="text-muted">{{link.text}}</span>
+              </a>
+              {% unless forloop.last %}
+                <span> | </span>
+              {% endunless %}
+            {% endfor %}
         </div>
     </div>
     <!-- End Introduction -->
-    <!-- Education -->
-    {% if site.data.education %}
-        <div class="row header">
-            <h2 class="header-name">Education</h2>
-            <hr class="header-bar"/>
-        </div>
-        {% for education in site.data.education %}
-        <div class="row">
-            <div class="col-lg-10 col-lg-offset-1">
-                <div class="row item">
-                    <div class="col-xs-7">
-                        <a href="{{ education.url }}" target="_blank">
-                            <h3 class="text-uppercase">{{ education.name }}</h3>
-                        </a>
-                    </div>
-                    <div class="col-xs-5 text-right">
-                        <a href="https://www.google.com/maps/place/{{ education.location }}" target="_blank">
-                            <h3 class="text-uppercase">{{ education.location }}</h3>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-10 col-lg-offset-1">
-                <p class="subtext">{{ education.subText}}</p>
-                <ul>
-                    {% for involvement in education.involvement %}
-                    <li>{{ involvement.description }}</li>
-                    {% endfor %}
-                </ul>
-            </div>
-        </div>
-        {% endfor %}
-    {% endif %}
-    <!-- End Education -->
-    <!-- Work Experience -->
-    {% if site.data.workExperience %}
-        <div class="row header">
-            <h2 class="header-name">Work Experience</h2>
-            <hr class="header-bar"/>
-        </div>
-        {% for work in site.data.workExperience %}
-        <div class="row item">
-            <div class="col-lg-10 col-lg-offset-1">
-                <div class="row">
-                    <div class="col-xs-7">
-                        <a href="{{ work.url }}" target="_blank">
-                            <h3 class="text-uppercase">{{ work.name }}</h3>
-                        </a>
-                    </div>
-                    <div class="col-xs-5 text-right">
-                        <a href="https://www.google.com/maps/place/{{ work.location }}" target="_blank">
-                            <h3 class="text-uppercase">{{ work.location }}</h3>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-10 col-lg-offset-1">
-                <p class="subtext">{{ work.subText }}</p>
-                <p class="item-description">{{ work.description }}</p>
-                <ul>
-                    {% for involvement in work.involvement %}
-                    <li>{{ involvement.description }}</li>
-                    {% endfor %}
-                </ul>
-                <p>Technologies Used: {{ work.technologies }}</p>
-            </div>
-        </div>
-        {% endfor %}
-    {% endif %}
-    <!-- End Work Experience -->
-    <!-- Community Service -->
-    {% if site.data.communityService %}
-        <div class="row header">
-            <h2 class="header-name">Community Service</h2>
-            <hr class="header-bar"/>
-        </div>
-        {% for cs in site.data.communityService %}
-        <div class="row">
-            <div class="col-lg-10 col-lg-offset-1">
-                <div class="row item">
-                    <div class="col-xs-7">
-                        <a href="{{ cs.url }}" target="_blank">
-                            <h3 class="text-uppercase">{{ cs.name }}</h3>
-                        </a>
-                    </div>
-                    <div class="col-xs-5 text-right">
-                        <a href="https://www.google.com/maps/place/{{ cs.location }}" target="_blank">
-                            <h3 class="text-uppercase">{{ cs.location }}</h3>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-10 col-lg-offset-1">
-                <p class="subtext">{{ cs.subText}}</p>
-                <ul>
-                    {% for involvement in cs.involvement %}
-                    <li>{{ involvement.description }}</li>
-                    {% endfor %}
-                </ul>
-            </div>
-        </div>
-        {% endfor %}
-    {% endif %}
-    <!-- End Community Service -->
+    <!-- Sections -->
+    {% for section in site.data.information.sections %}
+      <div class="row header">
+          <h2 class="header-name">{{section.name}}</h2>
+          <hr class="header-bar"/>
+      </div>
+      {% for experience in section.experiences %}
+      <div class="row item">
+          <div class="col-lg-10 col-lg-offset-1">
+              <div class="row">
+                  <div class="col-xs-7">
+                      <a href="{{ experience.url }}" target="_blank">
+                          <h3 class="text-uppercase">{{ experience.name }}</h3>
+                      </a>
+                  </div>
+                  <div class="col-xs-5 text-right">
+                      <a href="https://www.google.com/maps/place/{{ experience.location }}" target="_blank">
+                          <h3 class="text-uppercase">{{ experience.location }}</h3>
+                      </a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-10 col-lg-offset-1">
+              <p class="subtext">{{ experience.subText }}</p>
+              <p class="item-description">{{ experience.description }}</p>
+              <ul>
+                  {% for involvement in experience.involvement %}
+                  <li>{{ involvement.description }}</li>
+                  {% endfor %}
+              </ul>
+              {% if experience.technologies %}
+                <p>Technologies Used:
+                  {% for technology in experience.technologies %}
+                    <span>{{ technology }} </span>
+                  {% endfor %}
+                </p>
+              {% endif %}
+          </div>
+      </div>
+      {% endfor %}
+    {% endfor %}
+    <!-- End Sections -->
 </div>
