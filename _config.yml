@@ -6,13 +6,13 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Austin Green
-email: austingreenkansas@gmail.com
+title: John Doe
+email: johndoe@email.com
 description: >
   This template is available for customization at:
     <a href="https://github.com/austin94/resume-builder">
     https://github.com/austin94/resume-builder</a>
 baseurl: ""
 url:
-github_username:  austin94
+github_username:  johndoe
 markdown: kramdown

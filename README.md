@@ -4,6 +4,8 @@ pages or any web service that can serve static files.
 
 The purpose of this template is to serve as a flexible starting point so that an individual may customize to fit their own needs and experiences.
 
+You can view the template here: [http://austin94.github.io/resume-builder/](http://austin94.github.io/resume-builder/)
+
 ## Installation
 To install Jekyll and it's dependencies you will need Ruby installed on your machine.  If you have a Windows machine there are several services to do this for you.
 
@@ -79,15 +81,16 @@ As you change the JSON structure the *jekyll serve* command from earlier will re
 To change the name and footer of the resume, update the **_config.yml** file.
 
 ```
-  title: Austin Green
-  email: austingreenkansas@gmail.com
-  description: >
-    I am currently a Senior at Kansas State University.  I will be graduation in the Spring of 2016 with a
-    Bachelors of Engineering in Software Engineering with a minor in Business.  I enjoy finding unique
-    solutions to common problems with an emphasis on scalable web and mobile.
-  baseurl: ""
-  url: http://austingreen.info
-  github_username:  austin94
+title: John Doe
+email: johndoe@email.com
+description: >
+  This template is available for customization at:
+    <a href="https://github.com/austin94/resume-builder">
+    https://github.com/austin94/resume-builder</a>
+baseurl: ""
+url:
+github_username:  johndoe
+markdown: kramdown
 ```
 
 To replace the image thumbnail with your own, overwrite the **profile.png** image in the *images* directory.
@@ -97,10 +100,10 @@ To replace the image thumbnail with your own, overwrite the **profile.png** imag
 To deploy as a github page:
 
 * Fork this repository
-* Rename it to <github_username>.github.io
-* Wait 15 minutes for your resume to be shown
+* Rename it to **your_github_username.github.io**
+* Wait up to 15 minutes for your resume to be shown
 
-To push changes follow the steps above and push your changes to your repo and the changes should be visible in a few minutes (if not instantly).
+To push changes, follow the steps above and push your changes (including the static _site directory) to your repo and the changes should be visible in a few minutes (if not instantly).
 
 ### Anywhere else
 You can find the static files created under the *_site* directory.  These files can be hosted as is.
