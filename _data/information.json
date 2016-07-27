@@ -1,18 +1,16 @@
 {
   "introduction": {
     "name": "Trevor Broz",
-    "description": "Hello WORLD, jekyll-based resume template
-      that will allow you to create, customize, and host a resume online.
-      For more information view the README at
+    "description": "
       <a href='https://github.com/austin94/resume-builder'>https://github.com/austin94/resume-builder</a>.",
     "links": [
       {
-        "text": "johndoe@email.com",
-        "url": "johndoe@email.com"
+        "text": "TrevorBroz@gmail.com",
+        "url": "TrevorBroz@gmail.com"
       },
       {
-        "text": "https://github.com/johndoe",
-        "url": "https://github.com/johndoe"
+        "text": "https://github.com/TrevorBroz",
+        "url": "https://github.com/TrevorBroz"
       }
     ]
   },
